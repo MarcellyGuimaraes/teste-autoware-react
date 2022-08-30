@@ -5,7 +5,7 @@ import Timer from './Components/Timer'
 function App() {
   return (
     <div className="App">
-      <h1>Timer</h1>
+      <h1>TimerWare</h1>
 
       <Timer />
       <Historico />

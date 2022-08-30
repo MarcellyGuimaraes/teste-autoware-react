@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { SalvarHistorico, VerHistorico } from '../Historico'
+import Historico, { SalvarHistorico } from '../Historico'
 
 const Timer = () => {
   const [ativar, setAtivar] = useState(false)
@@ -58,7 +58,7 @@ const Timer = () => {
         <button onClick={handleComecar}>Iniciar</button>
       )}
 
-      <button onClick={VerHistorico}>Historico</button>
+      <button onClick={Historico}>Historico</button>
     </div>
   )
 }
