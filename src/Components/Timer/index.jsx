@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { SalvarHistorico, VerHistorico } from '../Historico'
 
 const Timer = () => {
   const [ativar, setAtivar] = useState(false)
@@ -34,13 +35,9 @@ const Timer = () => {
   const time = `${minuto}:${segundo}:${milissegundo}`
 
   function handleResetar() {
-    localStorage.ls_tempo = time
+    SalvarHistorico(time)
     setAtivar(false)
     setTempo(0)
-  }
-
-  function verHistorico() {
-    console.log(localStorage.ls_tempo)
   }
 
   return (
@@ -60,7 +57,8 @@ const Timer = () => {
       ) : (
         <button onClick={handleComecar}>Iniciar</button>
       )}
-      <button onClick={verHistorico}>Historico</button>
+
+      <button onClick={VerHistorico}>Historico</button>
     </div>
   )
 }

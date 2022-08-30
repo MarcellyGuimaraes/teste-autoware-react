@@ -1,4 +1,5 @@
 import './App.css'
+import Historico from './Components/Historico'
 import Timer from './Components/Timer'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <h1>Timer</h1>
 
       <Timer />
+      <Historico />
     </div>
   )
 }
