@@ -1,5 +1,5 @@
 import './App.css'
-import Historico from './Components/Historico'
+import { Historico } from './Components/Historico'
 import Timer from './Components/Timer'
 import logo from './img/logo.png'
 
