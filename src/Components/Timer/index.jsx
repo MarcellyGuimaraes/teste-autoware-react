@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { SalvarHistorico } from '../Historico'
+import useLocalStorage from '../Historico/hooks'
 import './styles.css'
 
 const Timer = () => {
@@ -34,9 +34,10 @@ const Timer = () => {
   const milissegundo = ('0' + (Math.floor(tempo / 10) % 100)).slice(-2)
 
   const time = `${minuto}:${segundo}:${milissegundo}`
+  const [timer, setTimer] = useLocalStorage('ls_tempo', 0)
 
   function handleResetar() {
-    SalvarHistorico(time)
+    setTimer(time)
     setAtivar(false)
     setTempo(0)
   }
