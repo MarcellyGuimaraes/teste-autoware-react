@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import useLocalStorage from '../Historico/hooks'
 
@@ -10,11 +11,7 @@ export function Historico() {
       <div>
         <h1>Historico</h1>
 
-        <ol>
-          <li>
-            <h3>{timer}</h3>
-          </li>
-        </ol>
+        <h3>{timer}</h3>
       </div>
     )
   }
