@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { SalvarHistorico, Historico } from '../Historico'
+import { SalvarHistorico, VerHistorico } from '../Historico'
 import './styles.css'
 
 const Timer = () => {
@@ -77,9 +77,6 @@ const Timer = () => {
             onClick={handleComecar}
           >
             Iniciar
-          </button>
-          <button type="button" className="botao" onClick={Historico}>
-            Historico
           </button>
         </div>
       )}
