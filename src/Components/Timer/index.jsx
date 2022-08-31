@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { SalvarHistorico, VerHistorico } from '../Historico'
+import { SalvarHistorico } from '../Historico'
 import './styles.css'
 
 const Timer = () => {
