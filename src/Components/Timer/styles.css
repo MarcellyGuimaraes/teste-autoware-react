@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+.botao {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    border: 5px solid #19a0e9;
+    color: white;
+    text-align: center;
+    background: none;
+    margin: 1rem;
+    width: 15rem;
+    height: 2.3rem;
+}
+
+.botao:hover {
+    background: #19a0e9;
+    cursor: pointer;
+}
+
+.btn-start{
+    background: none;
+    border: 5px solid #004164;
+    border-radius: 2px;
+}
+
+.btn-start:hover{
+    background: #004164;
+    cursor: pointer;
+}
+
+.btn-stop{
+    border: 5px solid #000264;
+}
+
+.btn-stop:hover{
+    background: #000264;
+    cursor: pointer;
+}

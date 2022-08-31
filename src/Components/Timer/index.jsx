@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Historico, { SalvarHistorico } from '../Historico'
+import './styles.css'
 
 const Timer = () => {
   const [ativar, setAtivar] = useState(false)
@@ -41,24 +42,47 @@ const Timer = () => {
   }
 
   return (
-    <div>
+    <div className="container">
       <h1>{time}</h1>
 
       {ativar ? (
         <div>
           {pausar ? (
-            <button onClick={handleComecar}>Começar</button>
+            <button
+              type="button"
+              className="botao btn-start"
+              onClick={handleComecar}
+            >
+              Começar
+            </button>
           ) : (
-            <button onClick={handlePausar}>Pausar</button>
+            <button type="button" className="botao" onClick={handlePausar}>
+              Pausar
+            </button>
           )}
 
-          <button onClick={handleResetar}>Parar</button>
+          <button
+            type="button"
+            className="botao btn-stop"
+            onClick={handleResetar}
+          >
+            Parar
+          </button>
         </div>
       ) : (
-        <button onClick={handleComecar}>Iniciar</button>
+        <div className="">
+          <button
+            type="button"
+            className="botao btn-start"
+            onClick={handleComecar}
+          >
+            Iniciar
+          </button>
+          <button type="button" className="botao" onClick={Historico}>
+            Historico
+          </button>
+        </div>
       )}
-
-      <button onClick={Historico}>Historico</button>
     </div>
   )
 }
